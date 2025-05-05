@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tournament App - Download</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+      background-size: 600% 600%;
+      animation: gradientBG 15s ease infinite;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .glow-button {
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      box-shadow: 0 0 15px rgba(255, 65, 108, 0.7), 0 0 30px rgba(255, 75, 43, 0.7);
+      transition: all 0.3s ease;
+    }
+
+    .glow-button:hover {
+      box-shadow: 0 0 25px rgba(255, 65, 108, 0.9), 0 0 50px rgba(255, 75, 43, 0.9);
+      transform: scale(1.05);
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .fade-in {
+      animation: fadeIn 2s ease-in forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="text-white flex items-center justify-center h-screen">
+
+  <div class="text-center fade-in px-4">
+    <h1 class="text-4xl sm:text-5xl font-bold mb-6">🎮 Download Tournament App</h1>
+    <p class="mb-6 text-lg sm:text-xl">Play Free Fire, BGMI, Valorant, Uno, and more.<br><span class="text-yellow-400 font-semibold">1 Kill = ₹5 | Real Money Matches!</span></p>
+    
+
+    <a href="https://ga-fs.primexop.com/3962/androidBuilds/ace-dropV1.apk" download>
+      <button class="glow-button px-10 py-4 rounded-full font-bold text-white text-lg">
+        📲 Download APK
+      </button>
+    </a>
+  </div>
+
+</body>
+</html>
